@@ -10,10 +10,12 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Inventory',
+    summary:
+      'Never lose track of what’s in stock with accurate inventory tracking.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+    
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -44,11 +46,10 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
-    summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
-    description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      name: 'Classrooms',
+      summary: 'Teachers can assign a selection of videos to watch and track the progress of their students.',
+      description:
+        'As the students watch interesting videos, these videos will be automatically fed into there feed to be watched by the students.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (

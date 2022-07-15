@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
-import { SelectField, TextField } from '@/components/Fields'
+import { SelectField, TextField, AgeField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 
 export default function Register() {
@@ -69,6 +69,9 @@ export default function Register() {
             name="password"
             type="password"
             autoComplete="new-password"
+            required
+          />
+          <AgeField className="col-span-full"
             required
           />
           <SelectField
