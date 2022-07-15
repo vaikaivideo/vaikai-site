@@ -37,6 +37,18 @@ export default function Register() {
           action="#"
           className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2"
         >
+          <SelectField
+            className="col-span-full"
+            label="Who are you?"
+            id="account_type"
+            name="account_type"
+          >
+            <option value="university">University</option>
+            <option value="school">School</option>
+            <option value="school_district">School District</option>
+            <option value="teacher">Teacher</option>
+            <option value="other_educator">Educator (Other)</option>
+          </SelectField>
           <TextField
             label="First name"
             id="first_name"
@@ -74,17 +86,6 @@ export default function Register() {
           <AgeField className="col-span-full"
             required
           />
-          <SelectField
-            className="col-span-full"
-            label="How did you hear about us?"
-            id="referral_source"
-            name="referral_source"
-          >
-            <option>AltaVista search</option>
-            <option>Super Bowl commercial</option>
-            <option>Our route 34 city bus ad</option>
-            <option>The “Never Use This” podcast</option>
-          </SelectField>
           <div className="col-span-full">
             <Button
               type="submit"
